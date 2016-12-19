@@ -1,0 +1,115 @@
+<script type="text/html" id="marketdel">
+<div class="main_content">
+	<!-- 侧边栏 -->
+	<div class="categories_warp">
+		<ul class="categories">
+			<%for(var i in data.categories){%>
+				<li class="categories_item" change=<%=data.categories[i].id%> style=background-image:url(<%=data.categories[i].flag%>)><%=data.categories[i].name%></li>
+			<%}%>	
+		</ul>
+	</div>
+    <!-- 右边栏 -->
+    <div class="right">
+        <div class="productTop">
+            <ul class="filter_titles">
+               <li class="filter_news">全部分类&nbsp;</li> 
+               <li class="filter_news news2">综合排序&nbsp;</li> 
+            </ul>
+             <!-- 选项 -->
+            <div class="new">
+                <ul class="choose">
+                   <li class="choose_items">全部分类</li> 
+                   <li class="choose_items">综合排序</li> 
+                   <li class="choose_items">销量最高</li> 
+                   <li class="choose_items">价格最低</li> 
+                   <li class="choose_items">价格最高</li> 
+                </ul>
+                <ul class="choose">
+                   <li class="choose_items">全部分类</li> 
+                </ul>
+            </div>
+            <!--  -->
+            <ul class="productlist">
+                <ul class="deltail" newId="104749">
+                    <li class="productlist_holder"></li>   
+    	             <%for(var j in data.products["104749"]){%>      
+    		            		<li class="productlist_item">
+    			                    <div class="productlist_item_inner">
+    			                        <div class="product_image">
+    			                            <div class="product_image_img" style=background-image:url(<%=data.products["104749"][j].app_mimg%>)></div>
+    			                        </div>
+    			                        <div class="proudect_wrap">
+    			                            <p class="product_name"><%=data.products["104749"][j].name%></p>
+    			                            <p class="jx"><span class="jx_inner">精选</span></p>
+    			                            <p class="weight"><%=data.products["104749"][j].specifics%></p>
+    			                            <p class="product_price_wrap">
+    			                                <span class="current_price">
+    			                                    <span class="price_yuan">¥</span>
+    			                                    <%=data.products["104749"][j].partner_price%>
+    			                                </span> 
+    			                                <span class="market_price">
+    			                                    <span class="price_yuan">¥</span>
+    			                                    <%=data.products["104749"][j].market_price%>
+    			                                </span>
+    			                            </p>
+    			                        </div>
+    			                        <div class="market_product_operates">
+    			                            <span class="jq">
+    			                                <span class="jq_inner"></span>
+    			                                <span class="num">0</span>
+    			                            </span>
+    			                            <span class="add">
+    			                                <span class="add_inner"></span>
+    			                            </span>
+    			                        </div>
+    			                    </div>
+    		                	</li>    		                          	
+    	              <%}%> 
+	            </ul>				
+            </ul>
+        </div>
+    </div>
+    
+
+</div>
+
+</script>
+
+<script type="text/html" id="change">
+<ul class=<%=newId%>>
+    <li class="productlist_holder"></li> 
+	 <%for(var j in newdata){%>      
+    		<li class="productlist_item">
+                <div class="productlist_item_inner">
+                    <div class="product_image">
+                        <div class="product_image_img" style=background-image:url(<%=newdata[j].app_mimg%>)></div>
+                    </div>
+                    <div class="proudect_wrap">
+                        <p class="product_name"><%=newdata[j].name%></p>
+                        <p class="jx"><span class="jx_inner">精选</span></p>
+                        <p class="weight"><%=newdata[j].specifics%></p>
+                        <p class="product_price_wrap">
+                            <span class="current_price">
+                                <span class="price_yuan">¥</span>
+                                <%=newdata[j].partner_price%>
+                            </span> 
+                            <span class="market_price">
+                                <span class="price_yuan">¥</span>
+                                <%=newdata[j].market_price%>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="market_product_operates">
+                        <span class="jq">
+                            <span class="jq_inner"></span>
+                            <span class="num">0</span>
+                        </span>
+                        <span class="add">
+                            <span class="add_inner"></span>
+                        </span>
+                    </div>
+                </div>
+        	</li>    		                          	
+	  <%}%> 
+</ul>	            		
+</script>

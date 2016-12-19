@@ -1,0 +1,114 @@
+<script id="homedel" type="text/html">
+<div class="home_content">
+<div class="slider">
+  	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	    	<%for(var m in data.act_info[0].act_rows){%>
+		      <div class="swiper-slide"><img src=<%=data.act_info[0].act_rows[m].activity.topimg%> alt=""></div>	    		
+	    	<%}%>
+	    </div>
+	    <div class="swiper-pagination"></div>
+ 	</div>
+</div>
+
+<ul class="main_icon">
+<li>
+  <a href="#kill"><div class="micon" style=background-image:url(<%=data.act_info[1].act_rows[0].activity.topimg%>)></div>
+  <p><%=data.act_info[1].act_rows[0].activity.name%></p> 
+  </a>
+</li> 
+<li>
+  <div class="micon" style=background-image:url(<%=data.act_info[1].act_rows[1].activity.topimg%>)></div>
+  <p><%=data.act_info[1].act_rows[1].activity.name%></p> 
+</li>
+<li>
+  <div class="micon" style=background-image:url(<%=data.act_info[1].act_rows[2].activity.topimg%>)></div>
+  <p><%=data.act_info[1].act_rows[2].activity.name%></p> 
+</li>
+<li>
+  <div class="micon" style=background-image:url(<%=data.act_info[1].act_rows[3].activity.topimg%>)></div>
+  <p><%=data.act_info[1].act_rows[3].activity.name%></p> 
+</li>
+</ul>
+
+<ul class="main_icon2">
+	<%for(var i=0;i<3;i++){%>
+		 <li class="micon2" style=background-image:url(<%=data.act_info[3].act_rows[i].activity.topimg%>)>			
+	<%}%>
+</ul>
+ 
+<!--  -->
+<div class="home_business">
+   <ul class="home_title" style=background-image:url(<%=data.act_info[4].act_rows[0].act_rows[0].chead_detail.img%>)>
+       <li class="htitle"></li>
+   </ul>
+    <ul class="home_hot">
+        <li class="home_hot_con" style=background-image:url(<%=data.act_info[4].act_rows[1].act_rows[0].cactivity_detail.img%>)>
+            <div></div>
+        </li>
+        <li class="home_hot_con" style=background-image:url(<%=data.act_info[4].act_rows[1].act_rows[1].cactivity_detail.img%>)>
+            <div></div>
+        </li>
+    </ul>
+    <ul class="home_lei">
+    	<%for(var j in data.act_info[4].act_rows[2].act_rows){%>
+        <li class="home_food" style=background-image:url(<%=data.act_info[4].act_rows[2].act_rows[j].cicons_detail.img%>)>
+             <div><%=data.act_info[4].act_rows[2].act_rows[j].cicons_detail.name%></div>
+        </li>             
+      <%}%>          
+   </ul>                             
+    <ul class="home_modcon">     	
+    	<%for(var k in data.act_info[4].act_rows[3].act_rows){%>
+    		<li class="home_mod" style=background-image:url(<%=data.act_info[4].act_rows[3].act_rows[k].activity.topimg%>)></li>     	
+    	<%}%>
+    </ul>
+</div>
+
+<ul class="acts_category">
+  <%for(var z in data.act_info[5].act_rows){%>  
+  <li class="acts_category_item">
+    <div class="item_title">
+         <span class="item_one"><%=data.act_info[5].act_rows[z].category_detail.name%></span>
+         <span class="item_two">更多</span>
+    </div>
+    <div class="item_banner" style=background-image:url(<%=data.act_info[5].act_rows[z].activity.topimg%>)>      
+    </div> 
+
+    <!-- goodlist -->
+       <ul class="acts_item_goodsListone">
+          <%for(var p in data.act_info[5].act_rows[z].category_detail.goods){%>
+         <li class="goodsListone">
+            <div class="goodsListone_inner">
+                <div class="goodsListone_inner_top" style=background-image:url(<%=data.act_info[5].act_rows[z].category_detail.goods[p].app_mimg%>)>
+                    <div class="one_inner_topimg"  style=background-image:url(<%=data.act_info[5].act_rows[z].category_detail.goods[p].app_mimg%>)></div>
+                </div>
+                <div class="goodsListone_inner_bot">
+                    <p class="product_name"><%=data.act_info[5].act_rows[z].category_detail.goods[p].name%></p>
+                    <div class="product_promotion">
+                      <span class="bz"> 精选 </span>
+                    </div>
+                    <p class="prodect_con font_ellipsis">
+                        <%=data.act_info[5].act_rows[z].category_detail.goods[p].specifics%>
+                    </p>
+                    <div class="price_warp">
+                        <span class="price_current">
+                          <span>¥</span>
+                           <%=data.act_info[5].act_rows[z].category_detail.goods[p].price%>
+                        </span> 
+                    </div>
+                    <div class="product_operates"> 
+                        <span class="product_operates_item" itemName=<%=data.act_info[5].act_rows[z].category_detail.goods[p].name%> itemId=<%=data.act_info[5].act_rows[z].category_detail.goods[p].id%> itemPrice=<%=data.act_info[5].act_rows[z].category_detail.goods[p].price%> itemPic=<%=data.act_info[5].act_rows[z].category_detail.goods[p].app_mimg%>>
+                          <span class="inner"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+         </li>
+        <%}%>
+       </ul>
+   </li>
+  <%}%> 
+
+</ul>
+
+</script>

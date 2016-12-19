@@ -1,0 +1,243 @@
+.kill{
+	background: #f2f2f2; 
+}
+.kill_header{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background: #f9fafd;;
+	display: flex;
+	font-weight: 700;
+	text-align: center;
+	justify-content:space-between;
+	font-size: 0.2rem;
+
+}
+.kill_header a{
+	padding: 20px;
+}
+.kill_header a:first-of-type{
+	background:url(images/ms2.png) no-repeat center;
+	background-size: auto 30px;
+}
+.kill_header a:last-of-type{
+	background:url(images/ms3.png) no-repeat center;
+	background-size: auto 30px;
+}
+.kbanner{
+	width: 100%;
+	padding-bottom: 43.7%;
+	background: no-repeat center top;
+	background-size: contain;
+}
+
+.list{
+	height: 0.9rem;
+	width: 100%;
+	display: flex;
+}
+.list li{
+	width: 25%;
+	height: 100%;
+	margin: auto;
+	text-align: center;
+	background-color: #272c2a;
+	color: #fff;
+}
+.list li div{
+	line-height: 0.32rem;
+	text-align: center;
+	font-size: 0.18rem;
+
+}
+.icon{
+	height: 16px;
+	width: 16px;
+	background: url(images/ms4.png) no-repeat right center;
+	background-size: cover;
+	display: inline-block;
+}
+
+
+/**/
+.details{
+	width: 100%;
+	height: 0.4rem;
+	position: relative;
+	background: #f2f2f2;
+	font-size: 0.14rem;
+
+}
+.left{
+	width: 30%;
+	height: 100%;
+	background:#fdd000;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.left:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 0.2rem solid transparent;
+	border-left: 0.1rem solid #fdd000;
+	border-bottom: 0.2rem solid transparent;
+	display: inline-block;
+	position: absolute;
+	top:0;
+	right: -0.09rem;
+}
+.right{
+	float: right;
+	background-color: #272c2a;
+	margin-top: 0.03rem;
+	margin-right: 0.1rem;
+	color: #fff;
+	border-radius: 0.2rem;
+	padding: 0.06rem 0.15rem;
+}
+
+
+/**/
+.list_top li{
+	height: 2rem;
+	width: 100%;
+	display: flex;
+	background-color: #fff;
+	margin-bottom: 0.1rem;
+}
+.list_top li>div{
+	width: 50%;
+	height: 100%;
+}
+.picleft{
+	background-repeat: no-repeat;
+	background-size:2rem 2rem;
+	border-right:1px solid #eee;
+}
+.conright{
+	padding-left: 0.2rem;
+	padding-top: 0.15rem;
+	line-height: 0.31rem;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.color{
+	color: #ff602c;
+}
+.yh{
+	font-size: 0.3rem;
+	font-weight: 700;
+	line-height: 0.42rem;
+}
+.color span:last-of-type{
+	color: #979697;
+	font-size: 0.15rem;
+}
+.conright p:last-of-type{
+	color: #fff;
+	background-color: #ff602c;
+	border-radius: 0.2rem;
+	line-height: 0.39rem;
+	width: 75%;
+	text-align: center;
+	margin-top: 8%;
+	/*margin: 0.15rem auto;*/
+}
+
+
+/**/
+
+.hot_title{
+	height: 0.4rem;
+	width: 100%;
+	line-height: 0.35rem;
+	font-size: 0.18rem;
+	text-align: center;
+	background: url(images/4.png) no-repeat center bottom;
+	/*background-size: */
+}
+.hot_title span{
+	padding: 0 0.03rem;
+	background-color: #fdd000;
+	margin-right: 0.05rem;
+}
+.listul{
+	display:flex;
+	width: 100%;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+.list_con{
+	width: 48%;
+	background: #fff;
+	position: relative;
+	margin-bottom: 0.1rem;
+}
+.pic{
+	padding-top:100%;
+	background-size: 100%;
+	border-bottom:1px dashed #e7e7e7;
+}
+.list_con p{
+	line-height: 0.45rem;
+	color: #444;
+	padding-left: 0.05rem;
+	height: 0.25rem;
+}
+.myh{
+	color:#fc1400;
+}
+.myj{
+	text-decoration: line-through;
+	padding-left: 0.05rem;
+}
+.add{
+	position: absolute;
+	display: inline-block;
+	width: 0.3rem;
+	height: 0.3rem;
+	border-radius: 0.2rem;
+	color: #fc1400;
+	border: 1px solid #999;
+	bottom: 0.05rem;
+	right: 0.05rem;
+	text-align: center;
+	line-height: 0.3rem;
+}
+
+.rule_list{
+	width:75%;
+	margin: 0 auto;
+	padding: 0.2rem 0 0.4rem 0.2rem;
+}
+.rule_list li{
+	list-style: decimal outside;
+	color: #595757;
+    font-size: 13px;
+}
+
+/**/
+.carpic{
+	position: fixed;
+	right: 0;
+	bottom: 10%; 
+	background:#ffd600 url(images/5.png) no-repeat center center; 
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	background-size: 80%;
+}
+.carnum{
+	position: absolute;
+	right: 0;
+	top:0;
+	border-radius: 50%;
+	background-color: #f40;
+    color: #fff;
+    line-height: 0.25rem;
+    width: 0.25rem;
+    text-align: center;
+}

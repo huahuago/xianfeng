@@ -1,0 +1,398 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+ul,li{
+	list-style: none;
+}
+html{
+	font-size: 100px;
+	max-width:480px;
+	height: 100%;
+}
+body{
+	font: 16px/1.5 '微软雅黑',Helvetica,Tahoma,Arial,'华文细黑',sans-serif;
+	color:#333;
+	min-width: 320px;
+	width:100%;
+	height: 100%;
+}
+
+/*=========footer======*/
+.mod_nav{
+	display: flex;
+	/*width: 100%;
+	height: 100%;
+	background-color: rgba(246,246,246,.95);*/
+	width:100%;
+	height: 0.6rem;
+	position: fixed;
+	z-index: 150;
+	left: 0;
+	bottom: 0;
+	height: 0.6rem;
+	background-color: rgba(246,246,246,.95);		
+}
+.navs_item{
+	width: 25%;
+	font-size: 0.14rem;
+	color: #777;
+	text-align: center;
+	background: no-repeat center 0.08rem;
+	background-size: 30%;
+	padding-top: 0.4rem;
+	position: relative;
+
+}
+.navs_item div{
+	position: absolute;
+	display: none;
+	border-radius: 50%;
+	left: 50%;
+	top:0.05rem;
+	margin-left:0.1rem;
+}
+.navs_item_bubble_num{
+	background: #f40;
+	color: #fff;
+	line-height: 0.18rem;
+	width:0.18rem;
+}
+
+/*==================header==================*/
+.pub_header{
+	width: 100%;
+	height: 50px;
+	background-color: #ffd600;
+	position: fixed;
+	line-height: 50px;
+	z-index: 200;
+	display: flex;
+}
+.header_content{
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	font-weight: 700;
+	margin: auto;
+	width:60%;
+}
+.header_icon{
+	flex:0 0 auto;
+	height: 100%;
+	background: url(../images/a1.png) no-repeat right 6px;
+	background-size: 80%;
+	padding-top: 12px;
+	font-size: 14px;
+	color: #000;
+	margin-right: 10px;
+}
+/*=============首页==============*/
+.gps{
+	width:100%;
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+	background:url(../images/s1.png) center 30% no-repeat #ffd82b;
+	background-size: 60%;
+	font-size: 0.18rem;
+	/*z-index: 300;
+	display: block;*/
+}
+.gps_con{
+	padding-top: 80%;
+	text-align: center;
+	font-size: 14px !important;
+}
+.gps_icon{
+	width:36px;
+	height: 36px;
+	margin: auto;
+	background: url(../images/s2.png) center center no-repeat;
+	background-size: 100%;
+	animation: gps_iconmove 2s infinite;
+}
+@keyframes gps_iconmove{
+	0%,100%{
+		opacity: .1;
+	}
+	50%{
+		opacity: 1;
+	}
+}
+/*=============第一页============*/
+.mod_page_1{
+	/*display: none;*/
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+}
+
+/*main*/
+.main{
+	padding-top: 50px;
+	background-color: #efefef;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.home_content{
+	font-size: 0.15rem;	
+}
+.swiper-slide img{
+	width:100%;
+}
+.swiper-pagination{
+	width:30% !important;
+	left: 70% !important;
+}
+/*main_icon*/
+.main_icon{
+	width: 100%;
+	height: 1.14rem;
+	padding: 3%;
+	display: flex;
+	background:#fff;
+
+}
+.main_icon li{
+	width: 25%;
+	height: 100%;
+}
+.main_icon p{
+	width:100%;
+	text-align: center;
+}
+.micon{
+	height: 80%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+/*main_icon2*/
+.main_icon2{
+	width: 100%;
+	margin:0.1rem 0;
+	height: 1.8rem;
+	display: flex; 
+}
+.micon2{
+	width: 33.3%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size:100%;
+	border-right: 1px solid #e0e0e0;
+}
+.micon2:last-of-type{
+	border-right: none;
+}
+/*home_business*/
+.home_business{
+	width: 100%;
+	background:#fff;
+}
+
+.home_title{
+	width: 100%;
+	height: 0.62rem;
+	background-repeat: no-repeat;
+	background-size: 100%; 
+}
+.home_hot{
+	width: 100%;
+	display: flex;
+	font-size: 0;
+	justify-content:space-around;
+	padding: 0 0.08rem;
+}
+.home_hot_con{
+	background-repeat: no-repeat;
+	height: 0.75rem;
+	width: 47%;
+	background-size: 100%;
+	margin: auto;
+	margin: 0.08rem;
+}
+/**/
+.home_lei{
+	width: 100%;
+	height: 1.14rem;
+	display: flex;
+}
+.home_food{
+	width:25%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.home_food div{
+	width: 100%;
+	height: 0.3rem;
+	text-align: center;
+	line-height: 0.3rem;
+	margin-top:70%;
+}
+.home_modcon{
+	width: 100%;
+	font-size: 0;
+}
+.home_mod{
+	display: inline-block;
+	width: 50%;
+	height:0.8rem;
+	background-size: 100%;
+	border: 1px solid #e0e0e0;
+}
+
+/*=====================================*/
+.acts_category{
+	margin:0.13rem 0;
+	background:#fff;
+	font-size: 0.16rem;
+}
+/*li1_div1*/
+.item_title:before{
+	display: table;
+	content: "";
+}
+.item_title{
+	width:100%;
+	height: 0.52rem;
+	line-height: 0.52rem;
+}
+.item_one{
+	color: #F38631;
+	border-left:#F38631 0.1rem solid;
+	padding-left: 0.08rem;
+	margin: 1.3rem 0 0 3%;
+}
+.item_two{
+	float: right;
+	background: url(../images/new.png) no-repeat 125% center;
+	color: #999;
+	padding-right: 0.3rem;
+	background-size: auto 0.13rem;
+}
+/*li1_div2*/
+.item_banner{
+	background:no-repeat center top;
+	background-size: 94%;
+	padding-bottom: 23.84%;
+	margin-bottom: 0.07rem;
+}
+/*ul  acts_item_goodsListone*/
+.acts_item_goodsListone{
+	padding-bottom: 0.04rem;
+	display: flex;
+}
+.goodsListone{
+	/*border: 1px solid #e0e0e0;*/
+	width:33.33%;
+	padding: 0.07rem 0;
+	margin: 1px 0;
+	line-height: 0.26rem;
+	background-color: #fff;
+	position: relative;
+
+}
+.goodsListone_inner{
+	border-right:1px solid #e0e0e0;
+	padding: 0 0.08rem;
+	
+}
+.goodsListone_inner_top{
+	width: 100%;
+	padding-bottom: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	position: relative;
+}
+.one_inner_topimg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-bottom: 100%;
+	background-size: 100%;
+}
+/*goodsListone_inner_bot*/
+.product_name{
+	color: #232b33;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+.product_promotion{
+	min-height: 0.21rem;
+}
+.bz{
+	font-size: 0.13rem;
+	padding: 0.02rem 0.04rem;
+	border:1px solid red;
+	display: inline-block;
+	color: red;
+	line-height: 0.13rem;
+	margin-right: 0.04rem;
+	border-radius: 0.052rem;
+	vertical-align: 0.013rem;
+}
+.prodect_con{
+	color: #999;
+}
+.font_ellipsis{
+	width: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+.price_current{
+	color: #ff3800;
+	font-size: 0.16rem;
+}
+.product_operates{
+	bottom: -0.13rem;
+	color: black;
+	position: absolute;
+	width: 1.3rem;
+	height: 0.65rem;
+}
+.product_operates_item{
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 0.65rem;
+	z-index: 2;
+	top:0;
+	line-height: 0.65rem;
+}
+.inner{
+	position: absolute;
+	top:15%;
+	left: 40%;
+	width: 0.34rem;
+	height: 0.34rem;
+	background: #ff4300 url(../images/price.png) no-repeat left center;
+	background-position: right center;
+	background-size: 200% 100%;
+	border-radius: 50%;
+	border: 1px solid #ffbe89;
+}
+
+.acts_category{
+	margin-bottom: 0.1rem;
+}
+
+
+
+
+/**/
+.fly{
+	position: fixed;
+	border-radius: 50%;
+	width:100px !important;
+	height:100px !important;
+	padding-bottom: 0 !important;
+}
